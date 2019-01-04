@@ -1,0 +1,177 @@
+@import "normalize.scss";
+@import "../func.scss";
+//公共样式
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 12px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+    font-family: "Microsoft Yahei", Helvetica, 幼圆, Simsun, Tahoma, Arial, sans-serif;
+    //font-family:  Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+//浮动
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+//显示或隐藏内容
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+//清除浮动
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//内容块居中
+.bc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tc {
+    text-align: center;
+}
+.tl {
+    text-align: left;
+}
+img.lazy {
+    background: url("../../imgs/imgLoading.svg") center center no-repeat;
+}
+//颜色
+.red {
+    color: red !important;
+}
+
+//手指
+.cup {
+    cursor: pointer;
+}
+
+
+//.el-loading-mask {
+//    background-color: rgba(255, 255, 255, 0.5);
+//}
+
+//调整 饿了吗 的ui样式
+//.el-loading-mask {
+//    background-color: rgba(255, 255, 255, .1);
+//}
+
+.el-loading-spinner .path,.el-loading-spinner .el-loading-text {
+    stroke: #888888;
+    color: #888888;
+}
+
+
+
+/*饿了吗*/
+
+.mint-toast {
+    position: fixed;
+    max-width: 80%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1000;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear
+}
+
+.mint-toast.is-placebottom {
+    bottom: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
+}
+
+.mint-toast.is-placemiddle {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.mint-toast.is-placetop {
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
+}
+
+.mint-toast-icon {
+    display: block;
+    text-align: center;
+    font-size: 56px
+}
+
+.mint-toast-text {
+    font-size: 14px;
+    display: block;
+    text-align: center
+}
+
+.mint-toast-pop-enter, .mint-toast-pop-leave-active {
+    opacity: 0
+}

@@ -1,0 +1,9 @@
+.testWrap .d1 {
+  display: inline-block;
+  background-color: #000; }
+.testWrap .d2 {
+  background-color: #999;
+  display: inline-block;
+  transform: translate(2); }
+
+/*# sourceMappingURL=test.css.map */
